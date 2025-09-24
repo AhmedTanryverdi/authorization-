@@ -12,12 +12,10 @@ export const InputField: React.FC<{
 			style={
 				inputValue !== ""
 					? {
-							boxShadow: "box-shadow: 0px 0px 0px 2px #1677ff",
-							border: "1px solid #1677ff",
+							boxShadow: "0px 0px 0px 2px #1677ff",
 					  }
 					: {
-							boxShadow: "box-shadow: 0px 0px 0px 2px #d9d9d9",
-							border: "1px solid #d9d9d9",
+							boxShadow: "0px 0px 0px 2px #d9d9d9",
 					  }
 			}
 		>
