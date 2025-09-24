@@ -24,6 +24,6 @@
 		"outDir": "./dist",
 		"sourceMap": true
 	},
-	"include": ["src/**/*.ts", "src/**/*.tsx"],
+	"include": ["src/**/*.ts", "src/**/*.tsx", ".d.ts"],
 	"exclude": ["node_modules"]
 }
