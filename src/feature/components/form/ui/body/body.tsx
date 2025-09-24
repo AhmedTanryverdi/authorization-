@@ -1,7 +1,16 @@
 import "./body.scss";
-import React from "react";
+import { StateContext } from "@/shared/contexts/context";
+import { InputValueType } from "@/shared/utils/types";
+import React, { ChangeEvent, useContext } from "react";
 
 export const Body: React.FC = (): React.JSX.Element => {
+	const context = useContext<InputValueType | undefined>(StateContext);
+
+	if (!context) throw new Error("context Error!");
+
+	const { emailValue, passwordValue, setEmailValue, setPasswordValue } =
+		context;
+
 	return (
 		<div className="body">
 			<label htmlFor="email" className="body__label">
@@ -23,6 +32,10 @@ export const Body: React.FC = (): React.JSX.Element => {
 
 				<input
 					type="text"
+					value={emailValue}
+					onChange={(e: ChangeEvent<HTMLInputElement>) =>
+						setEmailValue(e.target.value)
+					}
 					id="email"
 					className="input"
 					name="email"
@@ -49,6 +62,10 @@ export const Body: React.FC = (): React.JSX.Element => {
 
 				<input
 					type="text"
+					value={passwordValue}
+					onChange={(e: ChangeEvent<HTMLInputElement>) =>
+						setPasswordValue(e.target.value)
+					}
 					id="password"
 					className="input"
 					name="password"
