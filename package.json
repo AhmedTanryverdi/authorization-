@@ -1,0 +1,32 @@
+{
+	"name": "auth",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "webpack serve --mode=development"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@types/react": "^19.1.13",
+		"@types/react-dom": "^19.1.9",
+		"css-loader": "^7.1.2",
+		"html-webpack-plugin": "^5.6.4",
+		"sass": "^1.93.2",
+		"sass-loader": "^16.0.5",
+		"style-loader": "^4.0.0",
+		"ts-loader": "^9.5.4",
+		"typescript": "^5.9.2",
+		"webpack": "^5.101.3",
+		"webpack-cli": "^6.0.1",
+		"webpack-dev-server": "^5.2.2"
+	},
+	"dependencies": {
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1"
+	},
+	"engines": {
+		"node": "^20.17.0"
+	}
+}
