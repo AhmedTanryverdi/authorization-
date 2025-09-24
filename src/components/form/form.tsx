@@ -1,15 +1,13 @@
-import "./form.scss";
+import { Button } from "@/shared/components/button/button";
+import { Logo } from "@/shared/components/logo/Logo";
 import React from "react";
-import logo from "@/assets/icons/symbol.png";
+import "./form.scss";
 
 export const Form: React.FC = (): React.JSX.Element => {
 	return (
 		<form className="form">
 			<div className="header">
-				<div className="header__title">
-					<img src={logo} alt="logo" className="header__title_logo" />
-					<h2 className="header__title_text">Company</h2>
-				</div>
+				<Logo />
 				<div className="header__subtitle">
 					<h3 className="header__subtitle_text">
 						Sign in to your account to continue
@@ -70,12 +68,7 @@ export const Form: React.FC = (): React.JSX.Element => {
 					/>
 				</label>
 			</div>
-
-			<div className="footer">
-				<button type="submit" className="footer__btn">
-					Log in
-				</button>
-			</div>
+			<Button label="Log in" />
 		</form>
 	);
 };
