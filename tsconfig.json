@@ -1,6 +1,5 @@
 {
 	"compilerOptions": {
-		/* Основные настройки */
 		"target": "es5",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
@@ -17,24 +16,14 @@
 		"noEmit": false,
 		"jsx": "react-jsx",
 
-		/* Настройки пути модулей */
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["src/*"]
 		},
 
-		/* Другие опции */
 		"outDir": "./dist",
 		"sourceMap": true
 	},
-	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],
-	"exclude": [
-		"node_modules",
-		"build",
-		"scripts",
-		"acceptance-tests",
-		"webpack.config.js",
-		"karma.conf.js",
-		"jest.config.js"
-	]
+	"include": ["src/**/*.ts", "src/**/*.tsx"],
+	"exclude": ["node_modules"]
 }
