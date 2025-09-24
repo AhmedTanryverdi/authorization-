@@ -6,7 +6,7 @@ export const Button: React.FC<{ label: string }> = ({
 }): React.JSX.Element => {
 	return (
 		<div className="button-block">
-			<button type="submit" className="button-block__btn">
+			<button type="submit" className="button-block__btn" disabled>
 				{label}
 			</button>
 		</div>
